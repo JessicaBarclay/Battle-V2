@@ -1,6 +1,6 @@
 def sign_in_and_play
-  visit "/"
+  visit '/'
   fill_in :player_1_name, with: 'The Donald'
   fill_in :player_2_name, with: 'God'
-  click_button "Submit"
+  click_button 'Submit'
 end

@@ -1,6 +1,4 @@
-
 class Player
-
   DEFAULT_HEALTH = 60
   DEFAULT_DAMAGE = 10
   attr_reader :name, :hp
@@ -9,8 +7,8 @@ class Player
     @name = name
     @hp = hp
   end
-  
-  def loses_HP
+
+  def loses_hp
     self.hp -= DEFAULT_DAMAGE
   end
 

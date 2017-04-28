@@ -1,9 +1,7 @@
 require_relative 'player'
 
 class Game
-
-  attr_reader :players
-  attr_reader :active_player, :non_active_player
+  attr_reader :players, :active_player, :non_active_player
 
   def initialize(player1, player2)
     @players = [player1, player2]
@@ -12,7 +10,7 @@ class Game
   end
 
   def attack(player)
-    player.loses_HP
+    player.loses_hp
   end
 
   def switch_turns
