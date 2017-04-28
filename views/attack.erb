@@ -1,6 +1,8 @@
 <h1><%= @game.active_player.name %> has successfully attacked <%= @game.player_2.name %>!</h1>
+<h1>It is <%= @game.non_active_player.name %>'s turn</h1>
+<h1><%= @game.player_1.name %>: <%= @game.player_1.hp %>HP</h1>
 <h1><%= @game.player_2.name %>: <%= @game.player_2.hp %>HP</h1>
 
-<form action="/play">
-  <input type="submit" value="Ok">
+<form action="/attack">
+  <input type="submit" value="ATTACK!">
 </form>

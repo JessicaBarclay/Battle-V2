@@ -22,10 +22,18 @@ class Battle < Sinatra::Base
 
   get '/attack' do
     @game = $game
-    @game.attack(@game.player_2)
-    # @game.switch_turns
+    @game.attack(@game.player_2) #-- do we need to change player_2 to inactive_player (?)
+    @game.switch_turns
     erb(:attack)
   end
+
+  get '/switch_turns' do
+    @game = $game
+    @game.switch_turns
+    erb(:attack)
+  end
+
+
 
 run! if app_file == $0
 

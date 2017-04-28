@@ -1,4 +1,5 @@
 require './app.rb'
+require './lib/game.rb'
 
 feature 'Attack Player' do
   scenario 'Player 1 attacks Player 2' do
