@@ -9,11 +9,7 @@ class Player
     @name = name
     @hp = hp
   end
-
-  def attack(player)
-    player.loses_HP
-  end
-
+  
   def loses_HP
     self.hp -= DEFAULT_DAMAGE
   end
